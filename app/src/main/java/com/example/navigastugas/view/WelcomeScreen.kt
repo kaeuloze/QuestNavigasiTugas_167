@@ -36,6 +36,18 @@ fun WelcomeScreen(
         )
         Spacer(modifier = Modifier.height(40.dp))
 
+        // LOGO
+        Image(
+            painter = painterResource(id = R.drawable.logo_card),
+            contentDescription = "Logo Aplikasi",
+            modifier = Modifier
+                .size(200.dp)
+        )
+
+        Spacer(modifier = Modifier.height(24.dp))
+
     }
+
 }
+
 
