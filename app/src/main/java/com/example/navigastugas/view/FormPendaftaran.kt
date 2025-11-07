@@ -19,4 +19,14 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun FormulirPendaftaranScreen(
     onBackToHome: () -> Unit
-) {}
+) {
+    var nama by remember { mutableStateOf(TextFieldValue("")) }
+    var alamat by remember { mutableStateOf(TextFieldValue("")) }
+    var gender by remember { mutableStateOf("") }
+    var status by remember { mutableStateOf("") }
+    var showDialog by remember { mutableStateOf(false) }
+
+    val pinkPrimary = Color(0xFFE91E63)
+    val pinkLight = Color(0xFFF8BBD0)
+
+}
