@@ -63,9 +63,25 @@ fun WelcomeScreen(
         }
 
         Spacer(modifier = Modifier.height(60.dp))
-
+        // TOMBOL MASUK
+        Button(
+            onClick = onClickNext,
+            modifier = Modifier
+                .width(200.dp)
+                .height(48.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFE91E63),
+                contentColor = Color.White
+            ),
+            shape = RoundedCornerShape(12.dp)
+        ) {
+            Text(
+                text = "Masuk",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
-
 }
 
 
