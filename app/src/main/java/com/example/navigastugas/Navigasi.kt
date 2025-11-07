@@ -29,6 +29,15 @@ fun AppNavGraph(navController: NavHostController) {
             )
         }
 
+        // Halaman 3: Formulir Pendaftaran
+        composable("form") {
+            FormulirPendaftaranScreen(
+                onBackToHome = {
+                    // Setelah submit → kembali ke daftar peserta
+                    navController.popBackStack("list", inclusive = false)
+                }
+            )
+        }
 
     }
 }
